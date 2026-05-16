@@ -1,0 +1,22 @@
+# Secrets
+.env
+.env.local
+
+# Generation logs
+image_gen.log
+poll.log
+
+# Vercel
+.vercel/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+
+# Python cache
+__pycache__/
+*.pyc
