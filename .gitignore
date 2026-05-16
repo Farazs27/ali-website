@@ -9,12 +9,6 @@ poll.log
 # Vercel
 .vercel/
 
-# Next.js
-.next/
-out/
-node_modules/
-next-env.d.ts
-
 # OS junk
 .DS_Store
 Thumbs.db

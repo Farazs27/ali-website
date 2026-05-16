@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Samen Mondzorg — tandarts in Amsterdam Noord</title>
+<meta name="description" content="Persoonlijke mondzorg in Amsterdam Noord. Een gezonde mond, een mooie glimlach. Welkom bij Samen Mondzorg." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" id="nav">
+      <a class="nav__brand" href="index.html" aria-label="Samen Mondzorg — Home">
+        <svg class="logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M32 8c-7 0-12 3-17 3-6 0-9 4-9 11 0 9 4 16 8 22 3 4 4 12 7 12 4 0 4-9 8-9s4 9 8 9c3 0 4-8 7-12 4-6 8-13 8-22 0-7-3-11-9-11-5 0-10-3-17-3z"
+                fill="none" stroke="#3A352C" stroke-width="2.2" stroke-linejoin="round"/>
+        </svg>
+        <span class="brandmark">
+          <span class="b1">samen</span>
+          <span class="b2">M O N D Z O R G</span>
+        </span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a class="is-active" href="index.html">Home</a></li>
+        <li><a href="over-ons.html">Over ons</a></li>
+        <li><a href="behandelingen.html">Behandelingen</a></li>
+        <li><a href="contact.html">Route &amp; contact</a></li>
+        <li class="mobile-only"><a href="afspraak.html">Afspraak maken</a></li>
+      </ul>
+
+      <div class="nav__cta"><a class="btn btn--primary btn--small" href="afspraak.html">Afspraak maken</a></div>
+
+      <button class="nav__toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('is-open')">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__text">
+      <span class="eyebrow">Tandartspraktijk Amsterdam Noord</span>
+      <h1>Een gezonde mond,<br/><em>een mooie glimlach.</em></h1>
+      <p>Persoonlijke mondzorg met aandacht voor jou en je gezin. Welkom bij Samen Mondzorg in Amsterdam-Noord — waar zorg, rust en kwaliteit samenkomen.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="afspraak.html">Afspraak maken</a>
+        <a class="btn btn--ghost" href="over-ons.html">Meer over ons <span class="arrow">→</span></a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <img src="images/hero-reception.png" alt="Receptie van Samen Mondzorg in Amsterdam-Noord, sage groene balie met hanglampen" />
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE CARDS -->
+<section class="section--tight">
+  <div class="container">
+    <div class="svc">
+      <a class="svc__card" href="afspraak.html">
+        <span class="svc__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/>
+          </svg>
+        </span>
+        <h4>Afspraak maken</h4>
+        <p>Plan eenvoudig online of bel ons direct.</p>
+      </a>
+      <a class="svc__card" href="behandelingen.html">
+        <span class="svc__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M12 4c-3 0-5 1-7 1-2 0-3 2-3 4 0 4 2 7 3 9 1 2 2 5 3 5 2 0 2-4 4-4s2 4 4 4c1 0 2-3 3-5 1-2 3-5 3-9 0-2-1-4-3-4-2 0-4-1-7-1z"/>
+          </svg>
+        </span>
+        <h4>Onze behandelingen</h4>
+        <p>Van controle tot esthetische tandheelkunde.</p>
+      </a>
+      <a class="svc__card" href="over-ons.html">
+        <span class="svc__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="10" r="2.6"/>
+            <path d="M3 19c1-3 3.5-4 6-4s5 1 6 4M14 18c.6-1.6 2-2.4 3.8-2.4 1.4 0 2.6.6 3.2 2"/>
+          </svg>
+        </span>
+        <h4>Over ons</h4>
+        <p>Leer ons team en onze aanpak kennen.</p>
+      </a>
+      <a class="svc__card" href="contact.html">
+        <span class="svc__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M12 22s-7-7-7-12a7 7 0 1 1 14 0c0 5-7 12-7 12z"/><circle cx="12" cy="10" r="2.4"/>
+          </svg>
+        </span>
+        <h4>Route &amp; contact</h4>
+        <p>Goed bereikbaar — Amsterdam-Noord.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WELCOME SPLIT -->
+<section class="section">
+  <div class="container split split--reverse">
+    <div class="split__text">
+      <span class="eyebrow">Welkom bij Samen Mondzorg</span>
+      <h2>Zorg voor elkaar,<br/><em>zorg voor je mond.</em></h2>
+      <p>Bij Samen Mondzorg geloven we dat een fijne tandartservaring begint met rust, ruimte en oprechte aandacht. Onze moderne praktijk in Amsterdam-Noord biedt persoonlijke begeleiding voor het hele gezin — van het allereerste controlebezoek tot complexe behandelingen.</p>
+      <p>Of je nu komt voor een halfjaarlijkse controle, mondhygiëne, een vulling of een esthetische behandeling: we nemen de tijd voor jou en leggen alles duidelijk uit.</p>
+      <div class="hero__actions" style="margin-top:18px">
+        <a class="btn btn--primary" href="behandelingen.html">Onze behandelingen</a>
+      </div>
+    </div>
+    <div class="split__media">
+      <img src="images/treatment-room.png" alt="Behandelkamer met sage groene stoel en uitzicht op Amsterdamse grachtenpanden" />
+    </div>
+  </div>
+</section>
+
+<!-- VALUE STRIP -->
+<section>
+  <div class="container">
+    <div class="values">
+      <div class="values__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-8.8 1.5A5.5 5.5 0 0 0 3.2 4.6c-2 2-2 5.4 0 7.5l8.8 8.7 8.8-8.7c2-2.1 2-5.4 0-7.5z"/></svg>
+        <h4>Persoonlijk</h4>
+        <p>Tijd en aandacht voor iedere patiënt.</p>
+      </div>
+      <div class="values__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 12l4 4L21 4"/></svg>
+        <h4>Kwaliteit</h4>
+        <p>Erkend, modern en transparant.</p>
+      </div>
+      <div class="values__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <h4>Snel terecht</h4>
+        <p>Korte wachttijden en avondopeningen.</p>
+      </div>
+      <div class="values__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/><circle cx="12" cy="8" r="4"/></svg>
+        <h4>Gezinspraktijk</h4>
+        <p>Voor kinderen, jongeren en volwassenen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAIL SPLIT -->
+<section class="section">
+  <div class="container split">
+    <div class="split__media">
+      <img src="images/clinic-detail.png" alt="Wachthoek met linnen bank, plant en minimalistische tekening van een glimlach" />
+    </div>
+    <div class="split__text">
+      <span class="eyebrow">Onze praktijk</span>
+      <h2>Een plek waar je <em>graag</em> binnenkomt.</h2>
+      <p>We hebben onze praktijk bewust ontworpen als een rustige, lichte omgeving. Warme materialen, natuurlijke kleuren en planten — zodat je je vanaf het moment dat je binnenkomt op je gemak voelt.</p>
+      <p>Modern instrumentarium en strenge hygiënerichtlijnen zorgen voor veilige, comfortabele zorg op het hoogste niveau.</p>
+      <div class="hero__actions" style="margin-top:18px">
+        <a class="btn btn--ghost" href="contact.html">Bezoek ons <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section>
+  <div class="container">
+    <div class="cta-banner">
+      <div>
+        <h2>Klaar voor een nieuwe glimlach?</h2>
+        <p>Maak vandaag nog een afspraak voor een kennismaking of intake.</p>
+      </div>
+      <div class="cta-banner__actions">
+        <a class="btn btn--ghost" href="contact.html">Bel ons</a>
+        <a class="btn btn--ghost" style="background:var(--white);color:var(--sage-deep);" href="afspraak.html">Afspraak maken →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <svg width="32" height="32" viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M32 8c-7 0-12 3-17 3-6 0-9 4-9 11 0 9 4 16 8 22 3 4 4 12 7 12 4 0 4-9 8-9s4 9 8 9c3 0 4-8 7-12 4-6 8-13 8-22 0-7-3-11-9-11-5 0-10-3-17-3z"
+                    fill="none" stroke="#3A352C" stroke-width="2.2" stroke-linejoin="round"/>
+            </svg>
+            <span style="font-family:var(--serif); font-size:2rem;">samen</span>
+          </div>
+          <div style="font-family:var(--sans); font-size:0.7rem; letter-spacing:0.5em; text-transform:uppercase; color:var(--ink-soft); margin-top:6px;">M O N D Z O R G</div>
+        </div>
+        <p class="tag">Persoonlijke mondzorg in Amsterdam Noord — een gezonde mond, een mooie glimlach.</p>
+      </div>
+
+      <div>
+        <h5>Adres</h5>
+        <p>Van der Pekstraat 21<br/>1031 CR Amsterdam-Noord</p>
+        <p><a href="contact.html">Route bekijken →</a></p>
+      </div>
+
+      <div>
+        <h5>Openingstijden</h5>
+        <ul>
+          <li>Ma — Do · 08:00 – 17:30</li>
+          <li>Vrijdag · 08:00 – 16:00</li>
+          <li>Za — Zo · Gesloten</li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+31204440000">+31 (0)20 444 0000</a></li>
+          <li><a href="mailto:hallo@samenmondzorg.nl">hallo@samenmondzorg.nl</a></li>
+          <li><a href="afspraak.html">Afspraak maken</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Samen Mondzorg · KvK 00000000</span>
+      <span><a href="#">Privacy</a> · <a href="#">Algemene voorwaarden</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

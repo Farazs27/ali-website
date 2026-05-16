@@ -28,13 +28,13 @@
   --container: 1180px;
   --gutter: clamp(20px, 4vw, 56px);
 
-  --serif: var(--font-fraunces), "Fraunces", "Cormorant Garamond", Georgia, "Times New Roman", serif;
-  --sans:  var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --serif: "Fraunces", "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html { scroll-behavior: smooth; }
 body {
   font-family: var(--sans);
   font-size: 16px;
@@ -43,8 +43,6 @@ body {
   background: var(--cream);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: rgba(110,117,101,0.15);
-  overflow-x: hidden;
 }
 
 img { display: block; max-width: 100%; height: auto; }
@@ -301,7 +299,6 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   overflow: hidden;
   aspect-ratio: 4/5;
   box-shadow: var(--shadow-card);
-  position: relative;
 }
 .split__media img { width: 100%; height: 100%; object-fit: cover; }
 .split--reverse .split__text { order: 2; }
@@ -532,24 +529,6 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   .cta-banner__actions { justify-content: flex-start; }
 }
 
-/* Confirm card (afspraak) */
-.confirm-card {
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 32px;
-  text-align: center;
-}
-.confirm-card .check {
-  width: 64px; height: 64px;
-  border-radius: 50%;
-  background: var(--sage-tint);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 18px;
-}
-
 /* ===== Mobile polish ===== */
 @media (max-width: 640px) {
   body { font-size: 15.5px; line-height: 1.6; }
@@ -611,6 +590,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   /* Map a bit shorter */
   .map iframe { height: 280px; }
 
+  /* Order: in over-ons.html first split shows clinic image above text - keep stacked, no order swap needed */
   .row-between { flex-direction: column; align-items: flex-start; }
 }
 
@@ -640,16 +620,8 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
 
-/* iOS safe-area on iPhones with notch + webview support */
+/* iOS safe-area on iPhones with notch */
 @supports (padding: max(0px)) {
   .container { padding-left: max(var(--gutter), env(safe-area-inset-left));
                padding-right: max(var(--gutter), env(safe-area-inset-right)); }
-  body { padding-bottom: env(safe-area-inset-bottom); }
 }
-
-/* Image lazy-load fade-in (subtle) */
-.img-fade {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-.img-fade.is-loaded { opacity: 1; }

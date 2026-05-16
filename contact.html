@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Route &amp; contact — Samen Mondzorg</title>
+<meta name="description" content="Bezoek Samen Mondzorg in Amsterdam-Noord. Adres, openingstijden en bereikbaarheid." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" id="nav">
+      <a class="nav__brand" href="index.html" aria-label="Samen Mondzorg — Home">
+        <svg class="logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M32 8c-7 0-12 3-17 3-6 0-9 4-9 11 0 9 4 16 8 22 3 4 4 12 7 12 4 0 4-9 8-9s4 9 8 9c3 0 4-8 7-12 4-6 8-13 8-22 0-7-3-11-9-11-5 0-10-3-17-3z" fill="none" stroke="#3A352C" stroke-width="2.2" stroke-linejoin="round"/>
+        </svg>
+        <span class="brandmark">
+          <span class="b1">samen</span>
+          <span class="b2">M O N D Z O R G</span>
+        </span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="over-ons.html">Over ons</a></li>
+        <li><a href="behandelingen.html">Behandelingen</a></li>
+        <li><a class="is-active" href="contact.html">Route &amp; contact</a></li>
+        <li class="mobile-only"><a href="afspraak.html">Afspraak maken</a></li>
+      </ul>
+      <div class="nav__cta"><a class="btn btn--primary btn--small" href="afspraak.html">Afspraak maken</a></div>
+      <button class="nav__toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('is-open')"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="container">
+    <span class="eyebrow">Bezoek ons</span>
+    <h1>Route &amp; contact</h1>
+    <p>We zitten in een rustige zijstraat van de Van der Pekstraat, op vijf minuten lopen van metrostation Noorderpark. Welkom!</p>
+  </div>
+</section>
+
+<section class="section--tight">
+  <div class="container">
+    <div class="info-grid">
+
+      <div class="info-card">
+        <span class="eyebrow">Adres</span>
+        <h4>Samen Mondzorg</h4>
+        <p>Van der Pekstraat 21<br/>1031 CR Amsterdam-Noord<br/>Nederland</p>
+        <p style="margin-top:18px;">
+          <a class="btn btn--ghost btn--small" href="https://www.google.com/maps/dir/?api=1&destination=Van+der+Pekstraat+21+1031+CR+Amsterdam" target="_blank" rel="noopener">Routebeschrijving →</a>
+        </p>
+      </div>
+
+      <div class="info-card">
+        <span class="eyebrow">Openingstijden</span>
+        <ul class="hours">
+          <li><span>Maandag</span><span>08:00 – 17:30</span></li>
+          <li><span>Dinsdag</span><span>08:00 – 19:30</span></li>
+          <li><span>Woensdag</span><span>08:00 – 17:30</span></li>
+          <li><span>Donderdag</span><span>08:00 – 19:30</span></li>
+          <li><span>Vrijdag</span><span>08:00 – 16:00</span></li>
+          <li><span>Zaterdag</span><span class="closed">Gesloten</span></li>
+          <li><span>Zondag</span><span class="closed">Gesloten</span></li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <span class="eyebrow">Telefoon &amp; e-mail</span>
+        <h4>+31 (0)20 444 0000</h4>
+        <p><a href="tel:+31204440000">Bel ons direct</a> — bij voorkeur tussen 08:30 en 16:00.<br/>Voor spoedgevallen buiten openingstijden: bel het inspreeknummer voor instructies.</p>
+        <p><a href="mailto:hallo@samenmondzorg.nl">hallo@samenmondzorg.nl</a></p>
+      </div>
+
+      <div class="info-card">
+        <span class="eyebrow">Bereikbaarheid</span>
+        <h4>Metro, fiets &amp; auto</h4>
+        <p><strong>Metro:</strong> lijn 52, halte Noorderpark (5 min lopen).</p>
+        <p><strong>Fiets:</strong> stalling voor de deur.</p>
+        <p><strong>Auto:</strong> betaald parkeren in de wijk; oplaadpalen op 2 min lopen.</p>
+      </div>
+
+    </div>
+
+    <div class="map">
+      <iframe loading="lazy"
+        title="Locatie Samen Mondzorg"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=4.910%2C52.388%2C4.928%2C52.398&layer=mapnik&marker=52.393%2C4.919"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section--tight">
+  <div class="container">
+    <div class="row-between">
+      <div class="head">
+        <span class="eyebrow">Vraag</span>
+        <h2>Stuur ons een bericht</h2>
+        <p>Niet dringend? Vul dan onderstaand formulier in en we reageren binnen één werkdag.</p>
+      </div>
+    </div>
+
+    <form class="form" onsubmit="event.preventDefault(); alert('Bedankt — we nemen contact op binnen één werkdag.');">
+      <div class="field">
+        <label for="naam">Naam</label>
+        <input id="naam" name="naam" type="text" required placeholder="Voor- en achternaam" />
+      </div>
+      <div class="field">
+        <label for="email">E-mailadres</label>
+        <input id="email" name="email" type="email" required placeholder="naam@voorbeeld.nl" />
+      </div>
+      <div class="field">
+        <label for="tel">Telefoon (optioneel)</label>
+        <input id="tel" name="tel" type="tel" placeholder="06 …" />
+      </div>
+      <div class="field">
+        <label for="onderw">Onderwerp</label>
+        <select id="onderw" name="onderw">
+          <option>Algemene vraag</option>
+          <option>Nieuwe patiënt</option>
+          <option>Behandeling</option>
+          <option>Verzekering &amp; tarieven</option>
+        </select>
+      </div>
+      <div class="field full">
+        <label for="bericht">Bericht</label>
+        <textarea id="bericht" name="bericht" required placeholder="Vertel kort waar je vraag over gaat…"></textarea>
+      </div>
+      <div class="full" style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+        <button class="btn btn--primary" type="submit">Verstuur bericht</button>
+        <span style="font-size:.85rem;color:var(--muted);">We reageren binnen één werkdag.</span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <svg width="32" height="32" viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M32 8c-7 0-12 3-17 3-6 0-9 4-9 11 0 9 4 16 8 22 3 4 4 12 7 12 4 0 4-9 8-9s4 9 8 9c3 0 4-8 7-12 4-6 8-13 8-22 0-7-3-11-9-11-5 0-10-3-17-3z" fill="none" stroke="#3A352C" stroke-width="2.2" stroke-linejoin="round"/>
+            </svg>
+            <span style="font-family:var(--serif); font-size:2rem;">samen</span>
+          </div>
+          <div style="font-family:var(--sans); font-size:0.7rem; letter-spacing:0.5em; text-transform:uppercase; color:var(--ink-soft); margin-top:6px;">M O N D Z O R G</div>
+        </div>
+        <p class="tag">Persoonlijke mondzorg in Amsterdam Noord — een gezonde mond, een mooie glimlach.</p>
+      </div>
+      <div>
+        <h5>Adres</h5>
+        <p>Van der Pekstraat 21<br/>1031 CR Amsterdam-Noord</p>
+        <p><a href="contact.html">Route bekijken →</a></p>
+      </div>
+      <div>
+        <h5>Openingstijden</h5>
+        <ul>
+          <li>Ma — Do · 08:00 – 17:30</li>
+          <li>Vrijdag · 08:00 – 16:00</li>
+          <li>Za — Zo · Gesloten</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+31204440000">+31 (0)20 444 0000</a></li>
+          <li><a href="mailto:hallo@samenmondzorg.nl">hallo@samenmondzorg.nl</a></li>
+          <li><a href="afspraak.html">Afspraak maken</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Samen Mondzorg · KvK 00000000</span>
+      <span><a href="#">Privacy</a> · <a href="#">Algemene voorwaarden</a></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
